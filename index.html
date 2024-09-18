@@ -6,52 +6,55 @@
     <title>Fozan Ahmad - Professional Resume and Cover Letter</title>
     <style>
         body {
-            font-family: 'Calibri', 'Arial', sans-serif;
-            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px;
-            background-color: #f9f9f9;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
         }
         .container {
-            background-color: #ffffff;
-            padding: 40px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px 40px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         h1 {
+            font-size: 32px;
             color: #2c3e50;
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 28px;
+            margin-bottom: 30px;
         }
         h2 {
             color: #3498db;
-            margin-top: 25px;
-            font-size: 22px;
-            border-bottom: 1px solid #ecf0f1;
-            padding-bottom: 5px;
-        }
-        .contact-info {
-            margin-bottom: 25px;
-            font-size: 14px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .item {
+            font-size: 24px;
+            border-bottom: 1px solid #e1e1e1;
+            padding-bottom: 10px;
+            margin-top: 30px;
             margin-bottom: 20px;
         }
-        .item-title {
-            font-weight: bold;
+        .contact-info {
+            margin-bottom: 40px;
             font-size: 16px;
+            color: #7f8c8d;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .item {
+            margin-bottom: 25px;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: 600;
             color: #2c3e50;
         }
         .item-subtitle {
             font-style: italic;
             color: #7f8c8d;
-            font-size: 14px;
+            font-size: 15px;
         }
         .item-date {
             float: right;
@@ -61,53 +64,65 @@
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 15px;
             margin-top: 10px;
         }
         .skill-item {
             background-color: #ecf0f1;
-            padding: 5px 10px;
-            border-radius: 3px;
+            padding: 8px 15px;
+            border-radius: 20px;
             font-size: 14px;
             color: #34495e;
         }
         .clearfix::after {
             content: "";
-            clear: both;
             display: table;
+            clear: both;
         }
         .cover-letter {
             display: none;
-            margin-bottom: 40px;
             font-size: 16px;
             line-height: 1.8;
+            margin-bottom: 40px;
         }
         .toggle-btn {
             background-color: #3498db;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 25px;
             cursor: pointer;
             font-size: 16px;
-            margin-bottom: 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
         }
         .toggle-btn:hover {
             background-color: #2980b9;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <button class="toggle-btn" onclick="toggleCoverLetter()">Toggle Cover Letter</button>
+        <button class="toggle-btn" onclick="toggleCoverLetter()">View Cover Letter</button>
         
         <div id="coverLetter" class="cover-letter">
             <h2>COVER LETTER</h2>
             <p>Dear Hiring Manager,</p>
-            <p>I am writing to express my strong interest in the [Position] role at [Company Name]. As a passionate and driven computer science student with a diverse skill set in data science, machine learning, and web development, I am excited about the opportunity to contribute to your team and grow professionally.</p>
-            <p>Throughout my academic journey and through various certifications, I have developed a strong foundation in Python programming, data analysis, and AI technologies. My experience with tools such as Power BI, MySQL, and various machine learning libraries has equipped me with the skills to tackle complex data-driven challenges.</p>
-            <p>What sets me apart is my curiosity and eagerness to learn. I am constantly seeking new challenges and opportunities to expand my knowledge in the ever-evolving field of technology. My certifications in Big Data, Azure AI Fundamentals, and API development demonstrate my commitment to staying current with industry trends and best practices.</p>
-            <p>I am particularly drawn to [Company Name] because of [mention something specific about the company that interests you]. I believe my skills in [mention relevant skills] align well with the requirements of this position, and I am excited about the prospect of contributing to your team's success.</p>
-            <p>Thank you for considering my application. I look forward to the opportunity to discuss how my skills and enthusiasm can benefit your organization.</p>
+            <p>I am writing to express my interest in the [Position] role at [Company Name]. With a strong foundation in computer science, data science, machine learning, and web development, I am eager to contribute to your team and further my career in a professional setting.</p>
+            <p>My academic background, combined with hands-on experience in Python programming, AI technologies, and tools like Power BI and MySQL, has equipped me with the skills necessary to solve real-world challenges.</p>
+            <p>What excites me about [Company Name] is [specific reason]. My skills in [mention relevant skills] align with your needs, and I look forward to the opportunity to contribute to your team’s success.</p>
+            <p>Thank you for considering my application. I am enthusiastic about the opportunity to discuss how I can bring value to your organization.</p>
             <p>Sincerely,<br>Fozan Ahmad</p>
         </div>
 
@@ -137,12 +152,12 @@
             <h2>PROFESSIONAL CERTIFICATIONS</h2>
             <div class="item">
                 <div class="item-title">Big Data <span class="item-subtitle">Huawei (2021)</span></div>
-                <div class="item-title">AZURE: AI Fundamentals <span class="item-subtitle">Microsoft (2021)</span></div>
-                <div class="item-title">AI (ML and DL) <span class="item-subtitle">NAVTTC(Govt) (2021)</span></div>
+                <div class="item-title">Azure AI Fundamentals <span class="item-subtitle">Microsoft (2021)</span></div>
+                <div class="item-title">AI (ML and DL) <span class="item-subtitle">NAVTTC (2021)</span></div>
                 <div class="item-title">Microsoft SQL <span class="item-subtitle">Udemy (2021)</span></div>
                 <div class="item-title">API Developer <span class="item-subtitle">Udemy (2021)</span></div>
                 <div class="item-title">Python and Flask <span class="item-subtitle">Udemy (2022)</span></div>
-                <div class="item-title">Wordpress <span class="item-subtitle">Digiskill (2020)</span></div>
+                <div class="item-title">WordPress <span class="item-subtitle">Digiskill (2020)</span></div>
                 <div class="item-title">SEO <span class="item-subtitle">Digiskill (2020)</span></div>
             </div>
         </section>
@@ -156,14 +171,15 @@
                     <span class="skill-item">MySQL</span>
                     <span class="skill-item">HTML</span>
                     <span class="skill-item">CSS</span>
+                    <span class="skill-item">Flask</span>
+                    <span class="skill-item">Django</span> <!-- Added Django here -->
                 </div>
             </div>
             <div class="item">
                 <div class="item-title">Core Competencies</div>
                 <div><strong>Advanced:</strong> Power BI, MS Office, SEO</div>
-                <div><strong>Proficient:</strong> Machine learning, Data modeling, Database management, NumPy, Pandas, Front-End Development (HTML, CSS)</div>
-            </div>
-        </section>
+                <div><strong>Proficient:</strong> Machine Learning, Data Modeling, Flask
+        
 
         <section class="section">
             <h2>AREAS OF INTEREST</h2>
@@ -181,11 +197,7 @@
     <script>
         function toggleCoverLetter() {
             var coverLetter = document.getElementById("coverLetter");
-            if (coverLetter.style.display === "none" || coverLetter.style.display === "") {
-                coverLetter.style.display = "block";
-            } else {
-                coverLetter.style.display = "none";
-            }
+            coverLetter.style.display = (coverLetter.style.display === "none" || coverLetter.style.display === "") ? "block" : "none";
         }
     </script>
 </body>
