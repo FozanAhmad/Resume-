@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fozan Ahmad - Professional Resume and Cover Letter</title>
+    <style>
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 25px;
+            font-size: 22px;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+        .contact-info {
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+        .item-subtitle {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        .item-date {
+            float: right;
+            color: #95a5a6;
+            font-size: 14px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .skill-item {
+            background-color: #ecf0f1;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+            color: #34495e;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .cover-letter {
+            display: none;
+            margin-bottom: 40px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .toggle-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .toggle-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="toggle-btn" onclick="toggleCoverLetter()">Toggle Cover Letter</button>
+        
+        <div id="coverLetter" class="cover-letter">
+            <h2>COVER LETTER</h2>
+            <p>Dear Hiring Manager,</p>
+            <p>I am writing to express my strong interest in the [Position] role at [Company Name]. As a passionate and driven computer science student with a diverse skill set in data science, machine learning, and web development, I am excited about the opportunity to contribute to your team and grow professionally.</p>
+            <p>Throughout my academic journey and through various certifications, I have developed a strong foundation in Python programming, data analysis, and AI technologies. My experience with tools such as Power BI, MySQL, and various machine learning libraries has equipped me with the skills to tackle complex data-driven challenges.</p>
+            <p>What sets me apart is my curiosity and eagerness to learn. I am constantly seeking new challenges and opportunities to expand my knowledge in the ever-evolving field of technology. My certifications in Big Data, Azure AI Fundamentals, and API development demonstrate my commitment to staying current with industry trends and best practices.</p>
+            <p>I am particularly drawn to [Company Name] because of [mention something specific about the company that interests you]. I believe my skills in [mention relevant skills] align well with the requirements of this position, and I am excited about the prospect of contributing to your team's success.</p>
+            <p>Thank you for considering my application. I look forward to the opportunity to discuss how my skills and enthusiasm can benefit your organization.</p>
+            <p>Sincerely,<br>Fozan Ahmad</p>
+        </div>
+
+        <header>
+            <h1>FOZAN AHMAD</h1>
+            <div class="contact-info">
+                Hando Quaid e Azam Interchange, Lahore, Pakistan<br>
+                (+92) 3076358817 | fkhana76@gmail.com | DOB: 30 Aug 2000
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>EDUCATION</h2>
+            <div class="item clearfix">
+                <span class="item-date">Apr 2020 - Present</span>
+                <div class="item-title">Bachelor in Computer Science</div>
+                <div class="item-subtitle">Virtual University of Pakistan</div>
+            </div>
+            <div class="item clearfix">
+                <span class="item-date">Mar 2017 - Mar 2019</span>
+                <div class="item-title">ICS (Intermediate in Computer Science)</div>
+                <div class="item-subtitle">Al-Suffa College, Mianwali</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>PROFESSIONAL CERTIFICATIONS</h2>
+            <div class="item">
+                <div class="item-title">Big Data <span class="item-subtitle">Huawei (2021)</span></div>
+                <div class="item-title">AZURE: AI Fundamentals <span class="item-subtitle">Microsoft (2021)</span></div>
+                <div class="item-title">AI (ML and DL) <span class="item-subtitle">NAVTTC(Govt) (2021)</span></div>
+                <div class="item-title">Microsoft SQL <span class="item-subtitle">Udemy (2021)</span></div>
+                <div class="item-title">API Developer <span class="item-subtitle">Udemy (2021)</span></div>
+                <div class="item-title">Python and Flask <span class="item-subtitle">Udemy (2022)</span></div>
+                <div class="item-title">Wordpress <span class="item-subtitle">Digiskill (2020)</span></div>
+                <div class="item-title">SEO <span class="item-subtitle">Digiskill (2020)</span></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>TECHNICAL PROFICIENCIES</h2>
+            <div class="item">
+                <div class="item-title">Programming Languages</div>
+                <div class="skills-list">
+                    <span class="skill-item">Python</span>
+                    <span class="skill-item">MySQL</span>
+                    <span class="skill-item">HTML</span>
+                    <span class="skill-item">CSS</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">Core Competencies</div>
+                <div><strong>Advanced:</strong> Power BI, MS Office, SEO</div>
+                <div><strong>Proficient:</strong> Machine learning, Data modeling, Database management, NumPy, Pandas, Front-End Development (HTML, CSS)</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>AREAS OF INTEREST</h2>
+            <div class="skills-list">
+                <span class="skill-item">Data Science</span>
+                <span class="skill-item">Data Analytics</span>
+                <span class="skill-item">Marketing</span>
+                <span class="skill-item">E-commerce</span>
+                <span class="skill-item">Gaming</span>
+                <span class="skill-item">Research</span>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleCoverLetter() {
+            var coverLetter = document.getElementById("coverLetter");
+            if (coverLetter.style.display === "none" || coverLetter.style.display === "") {
+                coverLetter.style.display = "block";
+            } else {
+                coverLetter.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
